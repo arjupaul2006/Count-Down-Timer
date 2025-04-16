@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
+}
+
+.container{
+    /* border: 2px solid red; */
+    transform: translateX(-40%);
+    width: 50%;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
+        transform: translateX(0%);
+    }
+}
+
+.timer-heading{
+    text-align: center;
+    margin: 40px;
+}
+
+.countDown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px 30px 0px;
+    /* min-width: 510px; */
+}
+
+.countDown div{
+    padding: 3%;
+    background-color: rgb(97, 95, 95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countDown div span{
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 600px) {
+    .countDown div span{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .countDown div{
+        padding: 2%;
+        font-size: small;
+    }
+}
+
+.day-hrs-min-sec{
+    font-size: 1rem;
+    color: rgb(189, 183, 183);
+}
+
+.double-dot{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .double-dot{
+        font-size: 2rem;
+    }
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 10px 0px 20px 0px;
+}
+
+.progress-container{
+    background-color: rgb(97, 95, 95);
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar{
+    background-color: rgb(255, 0, 0);
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
