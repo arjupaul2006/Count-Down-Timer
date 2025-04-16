@@ -1,4 +1,4 @@
-let startingDatePrompt = prompt("Enter the Starting Date and Time (month date, year hrs:min:sec)","")
+let startingDatePrompt = prompt("Enter the Ending Date and Time (month date, year hrs:min:sec)","")
 // let endingDatePrompt = prompt("Enter the Ending TDate and Time (date month, year hrs:min:sec)","")
 
 const endDate=new Date(startingDatePrompt).getTime();
